@@ -1,0 +1,11 @@
+<p>Compte:{{ count }}</p>
+<button (click)="inc()">Incrémenter</button>
+<p *ngIf="count > 10 ">
+  It's (nearly) over 9000
+</p>
+
+<p>
+  <ng-container *ngFor="let elem of tab">
+    {{ elem }}
+  </ng-container>
+</p>

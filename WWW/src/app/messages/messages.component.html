@@ -1,0 +1,15 @@
+<h1>Messages</h1>
+<table class="messages">
+<thead>
+    <tr>
+      <th>Titre</th>
+      <th>Date de création</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let message of messages">
+        <td>{{ message.title }}</td>
+        <td>{{ message.date }}</td>
+    </tr>
+</tbody>
+</table>
